@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(51, 130, 13);
+    background-color: #FF9D23;
+    overflow-x: hidden;
+    
+}
+
+header {
+    display: flex;
+    /*flex-direction: row;*/
+
+    align-items: center;
+    justify-content: space-between;
+    /*position: relative;*/
+    width: 100%;
+    padding: 0 20px;
+    background:rgba(123, 76, 19, 0.6);
+    background-color: #F5F2D0;
+    flex-wrap: wrap;
+    height: 7rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+
+    
+}
+
+.menu_superior {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+    gap: 5rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+    font-size: medium;
+}
+.menu_pt2 {
+    display: flex;
+    
+    align-content: space-between;
+    margin-left: 20%;
+    font-family: "Poppins", serif;
+    color: #FFF
+}
+
+.menu_pt2 button {
+    width: 5rem;
+    height: 2rem;
+    align-items: center;
+    border: none;
+    background-color: #c14600;
+    color: #F5F2D0;
+    border-radius: 5px;
+}
+
+.menu_pt2 button:hover {
+    color: #F5F2D0;
+    background-color: #c2b84f;
+    cursor: pointer;
+    transition: width 2s linear 1s;
+
+}
+
+
+nav img {
+    width: 13%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #c14600;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    display: block;
+}
+
+.tarefas {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    
+}
+.tarefas div {
+    position: relative;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 17px;
+    padding: 80px;
+    padding-bottom: 300px;
+    width: 25%;
+    box-shadow: 0px 0px 17px 6px rgba(0,0,0,0.17);
+    
+}
+
+.tarefas div h2 {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    background-color: #c14600;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transform: translateY(-10%)
+}
+
+.tarefas div button {
+    position: absolute;
+    top: -20px;
+    right: -1px;
+    color: rgba(255, 255, 255);
+    background-color: rgb(139, 74, 12);
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 100%;
+    transform: translateY(-10%)
+
+}
+
+.tarefas div button:hover {
+    position: absolute;
+    top: -20px;
+    right: -1px;
+    color: rgba(255, 255, 255);
+    background-color:  #c14600;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 100%;
+    transform: translateY(-10%);
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .tarefas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarefas div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

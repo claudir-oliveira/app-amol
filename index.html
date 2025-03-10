@@ -1,64 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .kanban {
-            display: flex;
-            gap: 14px;
-            padding: 24px;
-            width: 100%;
-            height: 90vh;
-            justify-content: space-between;
-        }
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
 
-        .kanban-column {
-            flex: 1;
-            min-width: 300px;
-        }
-    </style>
-    <title>Kanban</title>
+    <title>Mirra - Tarefas</title>
 </head>
+
 <body>
-    <main class="kanban">
-        <!-- COLUMN 1 -->
-        <div class="kanban-column" data-id="1">
-            <div class="kanban-title">
+    <header>
+        <nav>
+            <img src="logo4.png" alt="logo sicredi">
+            <section class="menu_superior">
+                <a href="/index.html">Lista de Tarefas</a>
+                <a href="/itens.html">Lista de Itens</a>
+                <a href="/">Anotações</a>
+            </section>
+            <section class="menu_pt2">
+                <button type="button">Fazer login</button>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tarefas">
+            <div class="tarefasFazer">
                 <h2>A Fazer</h2>
-                <button class="add-card">
-                    <i class="fa-solid fa-plus"></i>
-                </button>
+                <button>+</button>
             </div>
-            <div class="kanban-cards"></div>
-        </div>
-
-        <!-- COLUMN 2 -->
-        <div class="kanban-column" data-id="2">
-            <div class="kanban-title">
+            <div class="tarefasFazendo">
                 <h2>Fazendo</h2>
-                <button class="add-card">
-                    <i class="fa-solid fa-plus"></i>
-                </button>
+                <button>+</button>
             </div>
-            <div class="kanban-cards"></div>
-        </div>
-
-        <!-- COLUMN 3 -->
-        <div class="kanban-column" data-id="3">
-            <div class="kanban-title">
+            <div class="tarefasConcluido">
                 <h2>Concluído</h2>
-                <button class="add-card">
-                    <i class="fa-solid fa-plus"></i>
-                </button>
+                <button>+</button>
             </div>
-            <div class="kanban-cards"></div>
-        </div>
+        </section>
     </main>
-
-
-    <script src="src/javascript/script.js"></script>
+    
 </body>
 </html>
